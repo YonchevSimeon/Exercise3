@@ -15,6 +15,9 @@
 							<Text text="Product"/>
 						</Column>
 						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Image"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
 							<Text text="Supplier"/>
 						</Column>
 						<Column minScreenWidth="Tablet" demandPopin="true">
@@ -31,6 +34,7 @@
 						<ColumnListItem>
 							<cells>
 								<ObjectIdentifier title="{productsModel>Name}" text="{productsModel>ProductId}"/>
+								<Image src="{productsModel>ProductPicUrl}" width="5em" height="5em" />
 								<Text text="{productsModel>SupplierName}"/>
 								<Text text="{productsModel>CurrencyCode}"/>
 								<Text text="{ path: 'productsModel>Status', formatter: '.formatter.determineIcon' }"/>
